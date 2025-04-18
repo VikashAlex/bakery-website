@@ -20,6 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mediaquary.css" />
   </head>
@@ -103,7 +104,7 @@
     <section class="banner-section">
       <div class="overlay"></div>
 
-      <div class="container">
+      <div class="container"  data-aos="fade-up" data-aos-duration="3000">
         <div class="row-hero-section">
           <div class="banner-content">
             <h6>Whenever we bake, bake with our heart</h6>
@@ -119,7 +120,7 @@
       </div>
     </section>
 
-    <section class="home-about section-gap flexA">
+    <section class="home-about section-gap flexA" data-aos="fade-up-right" data-aos-duration="3000">
       <div class="main-container">
         <div class="content-box flex">
           <h3>Brand new app to blow your mind</h3>
@@ -145,12 +146,12 @@
     </section>
 
     <section class="category section-gap">
-      <div class="container flex">
-        <div class="heading">
+      <div class="container flex" >
+        <div class="heading" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <h1>Category of available items</h1>
           <p>They are grilling celebrities in their own right.</p>
         </div>
-        <div class="brands flex">
+        <div class="brands flex" data-aos="fade-left"  data-aos-duration="500">
           <div class="col flex">
             <div class="brand-img"><img src="img/c1.jpg" alt="" /></div>
             <div class="brand-head">Pizza</div>
@@ -184,7 +185,7 @@
       </div>
     </section>
 
-    <section class="about-video section-gap">
+    <section class="about-video section-gap" data-aos="zoom-in" data-aos-duration="3000">
       <div class="container flex">
         <div class="content-box flex">
           <h3>Brand new app to blow your mind</h3>
@@ -206,15 +207,15 @@
       </div>
     </section>
 
-    <section class="review section-gap">
+    <section class="review section-gap" >
       <div class="overlay"></div>
       <div class="container">
-        <div class="heading flexA">
+        <div class="heading flexA" data-aos="fade-down" data-aos-duration="2000">
           <h1>Enjoy our Client’s Review</h1>
           <p>Who are in extremely love with eco friendly system.</p>
         </div>
 
-        <div class="sliders">
+        <div class="sliders" data-aos="fade-up" data-aos-duration="2000">
 
           <div class="slider flex">
             <div class="img-box"><img src="img/r1.png" alt="" /></div>
@@ -402,7 +403,7 @@
 
     <section class="blog section-gap">
       <div class="container">
-        <div class="heading">
+        <div class="heading" data-aos="fade-up" data-aos-duration="5000">
           <h1>Latest posts from our Blog</h1>
           <p>
             Do you want to share your love of cheese fondue with your children?
@@ -411,7 +412,7 @@
           </p>
         </div>
 
-        <div class="row flex">
+        <div class="row flex" data-aos="fade-down" data-aos-duration="1000">
           <div class="col3 flex">
             <div class="row1 flex">
               <div class="big-image"><img src="img/b1.jpg" alt="" /></div>
@@ -512,7 +513,7 @@
     </section>
 
     <footer class="section-gap">
-      <div class="container flexJ">
+      <div class="container flexJ" data-aos="fade-down" data-aos-duration="2000">
         <ul>
           <h3>About Us</h3>
           <li>
@@ -550,13 +551,17 @@
         </ul>
 
       </div>
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-duration="2000">
 
         <p class="footerPra">Copyright © 2025 All rights reserved | This template is made with <span>&#9825;</span>  by <span> Colorlib</span></p>
       </div>
     </footer>
   </body>
   <script src="index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script
     src="https://code.jquery.com/jquery-3.7.1.js"
     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
@@ -590,4 +595,6 @@ $('.sliders').slick({
   ]
 });
   </script>
+
+  
 </html>
